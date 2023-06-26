@@ -1,12 +1,12 @@
 ﻿# Create a Dynamic Group for each Windows Version, including groups for All Windows 10 & 11 
 
-# Check if AzureAD module is installed - run with admin privileges 
+# Check if AzureAD module is installed - run PS with admin privileges 
 if (Get-Module -Name AzureAD -ListAvailable) {
     # Uninstall AzureAD module
     Uninstall-Module -Name AzureAD -AllVersions -Force
 }
 
-# Refresh Powershell - close and open again with admin privileges  
+# Refresh Powershell - close and open PS again with admin privileges  
 
 # Install and Import Azure AD Preview
 Install-Module -Name AzureADPreview -AllowClobber -Confirm -force
