@@ -35,7 +35,7 @@ New-AzureADMSGroup -DisplayName "SG | Windows 10 | Build 21H1" -Description "Con
 # Windows 10 version 21H2 (build 19044)
 New-AzureADMSGroup -DisplayName "SG | Windows 10 | Build 21H2" -Description "Containing all Windows 10 version 21H2" -MailEnabled $False -MailNickName $False -SecurityEnabled $True -GroupTypes @("DynamicMembership") -MembershipRule '(device.deviceOSVersion -startsWith "10.0.19044") -and (device.deviceOSType -eq "Windows") -and (device.managementType -eq "MDM")' -MembershipRuleProcessingState "On"
 
-# Windows 10 version 22H2 (build 19044)
+# Windows 10 version 22H2 (build 19045)
 New-AzureADMSGroup -DisplayName "SG | Windows 10 | Build 22H2" -Description "Containing all Windows 10 version 22H2" -MailEnabled $False -MailNickName $False -SecurityEnabled $True -GroupTypes @("DynamicMembership") -MembershipRule '(device.deviceOSVersion -startsWith "10.0.19045") -and (device.deviceOSType -eq "Windows") -and (device.managementType -eq "MDM")' -MembershipRuleProcessingState "On"
 
 # Windows 11 version 21H2 (build 22000)
