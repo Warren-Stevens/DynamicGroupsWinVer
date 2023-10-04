@@ -1,4 +1,4 @@
-﻿# Create a Dynamic Group for each Windows Version, including groups for All Windows 10 & 11 
+﻿# Create a Dynamic Group for each Windows Version, including groups for All Windows 10 and 11 
 
 # Check if AzureAD module is installed - run PS with admin privileges 
 if (Get-Module -Name AzureAD -ListAvailable) {
